@@ -8,7 +8,7 @@
        
     b .	Fill all required info
     
-    c.	Put common name like *.name.com for wild card, name.com for single domain, test.name.com for particular subdomain.
+    c.	Put common name like _*.name.com_ for wild card, _name.com_ for single domain, _test.name.com_ for particular subdomain.
 
 2. Finalize any SSL authority. And use this .csr  file to request for SSL certificate.
 
