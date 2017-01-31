@@ -2,7 +2,7 @@
 
 1. Create key and CSR for your Linux system
     a. Execute this query
-        $ openssl req -new -newkey rsa:2048 -nodes -keyout test.name.key -out test.name.csr
+       > $ openssl req -new -newkey rsa:2048 -nodes -keyout test.name.key -out test.name.csr
     b .	Fill all required info
     c.	Put common name like *.name.com for wild card, name.com for single domain, test.name.com for particular subdomain.
 
@@ -14,7 +14,7 @@
         $ openssl pkcs12 -export -out test.name.pfx -inkey test.name.key -in test.name.crt
 
 # Use .pfx and .ca-bundle file to create HTTPS node server #
-    * > var app = new express();
+     var app = new express();
     
         https.createServer({
                   ca: fs.readFileSync('test_name_com.ca-bundle'), // Provided by SSL authority
