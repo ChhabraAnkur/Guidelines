@@ -19,12 +19,12 @@
      > $ openssl pkcs12 -export -out test.name.pfx -inkey test.name.key -in test.name.crt
 
 # Use .pfx and .ca-bundle file to create HTTPS node server #
+     
      var app = new express();
-    
         https.createServer({
                   ca: fs.readFileSync('test_name_com.ca-bundle'), // Provided by SSL authority
                   pfx: fs.readFileSync('test.name.pfx'),
-                  passphrase: _password_ // This is that you will use while creation of .key
-        }, app).listen(_portNo_);
+                  passphrase: password // This is that you will use while creation of .key
+        }, app).listen(portNo);
 
 
