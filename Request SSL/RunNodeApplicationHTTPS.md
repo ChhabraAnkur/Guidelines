@@ -10,11 +10,11 @@
     
     c.	Put common name like _*.name.com_ for wild card, _name.com_ for single domain, _test.name.com_ for particular subdomain.
 
-2. Finalize any SSL authority. And use this .csr  file to request for SSL certificate.
+2. Finalize any SSL authority. And use this _.csr_  file to request for SSL certificate.
 
-3. SSL authority will provide you one .crt file and one .ca-bundle file
+3. SSL authority will provide you one _.crt_ file and one _.ca-bundle_ file
 
-4. Use .crt and .key file to create .pfx file
+4. Use _.crt_ and _.key_ file to create _.pfx_ file
 
      > $ openssl pkcs12 -export -out test.name.pfx -inkey test.name.key -in test.name.crt
 
