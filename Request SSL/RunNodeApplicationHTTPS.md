@@ -1,6 +1,7 @@
 # How to Request for SSL from Linux Server #
 
 1. Create key and CSR for your Linux system
+
     a. Execute this query
     
        > $ openssl req -new -newkey rsa:2048 -nodes -keyout test.name.key -out test.name.csr
